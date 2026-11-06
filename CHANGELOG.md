@@ -6,6 +6,12 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 Repo-level versions track the skill suite as a whole. Each skill keeps its own version history
 in `skills/<slug>/CHANGELOG.md`.
 
+### v0.2.0 (2026-11-06)
+
+- 在 `skills/ssl-cert-renew/` 收录 SSL 证书续期 Skill v0.1.3，包含独立 README / LICENSE / CHANGELOG。
+- 支持阿里云个人免费证书及已有 OSS 域名绑定：默认模拟、阈值15天、零元校验、防重复提交与中断恢复。
+- 更新仓库 README 的 Skill 索引、Codex 安装方法及运行数据隐私说明；保留既有 hn-nurture。
+
 ### v0.1.0 (2026-09-01)
 
 - 初始化 multi-repo 结构（仓库级 README / LICENSE / CHANGELOG / .gitignore + `skills/` 目录）
