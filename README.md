@@ -7,6 +7,7 @@
 | Skill | Description |
 |---|---|
 | [hn-nurture](./skills/hn-nurture/) | Hacker News 养号：选题 → 中文参考 → 用户手写发布 → flag 自检。内置 HN 管理员设定的最高红线（禁止 AI 代写），支持 `~/.config` 隐私配置与三层 flag/kill 检测 |
+| [ssl-cert-renew](./skills/ssl-cert-renew/) | SSL 证书续期：按域名和到期阈值检查，授权后申请阿里云个人免费证书并替换 OSS 绑定；零元校验、提交防重和中断恢复 |
 
 ## Quick Start
 
@@ -15,6 +16,7 @@
 ```bash
 # 克隆本仓库
 git clone https://github.com/Songhonglei/better-tech-workflow.git
+cd better-tech-workflow
 
 # 将需要的 skill 复制到你的 agent skills 目录
 cp -r skills/hn-nurture ~/.workbuddy/skills/
@@ -24,11 +26,21 @@ cp -r skills/hn-nurture ~/.workbuddy/skills/
 bash ~/.workbuddy/skills/hn-nurture/scripts/setup_profile.sh
 ```
 
+安装 SSL 续期 Skill（默认只读模拟，真实申请和替换另需授权）：
+
+```bash
+mkdir -p ~/.codex/skills
+cp -R skills/ssl-cert-renew ~/.codex/skills/
+```
+
+详见 [SSL 续期说明](./skills/ssl-cert-renew/README.md)。
+
 ## Install via Agent Platforms
 
 | Platform | Install |
 |---|---|
-| OpenClaw | `clawhub install <skill-name>` |
+| OpenClaw | Manual: copy to `~/.openclaw/skills/`；已上架的 Skill 也可用 `clawhub install <skill-name>` |
+| Codex | Manual: copy to `~/.codex/skills/` |
 | Claude Code | Manual: copy to `~/.claude/skills/` |
 | Cursor | Manual: copy to `.cursor/skills/` |
 | WorkBuddy | Manual: copy to `~/.workbuddy/skills/` |
@@ -51,7 +63,7 @@ better-tech-workflow/
 ## Privacy
 
 仓库内的 skill 均不硬编码个人账号、雇主或身份信息。需要个人数据的 skill 会把配置存放在
-用户 HOME 的 `~/.config/<skill-slug>/`（不随仓库提交），详见各 skill 的 README。
+用户 HOME 的 `~/.config/<skill-slug>/` 或 `~/.local/state/<skill-slug>/`（不随仓库提交）；额外运行证据保存到 Skill 外私有目录，详见各 skill 的 README。
 
 ## License
 

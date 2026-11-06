@@ -1,0 +1,4 @@
+interface:
+  display_name: "SSL 证书续期"
+  short_description: "检查证书到期时间，模拟阿里云个人免费证书申请与 OSS 换证"
+  default_prompt: "使用 $ssl-cert-renew 模拟检查指定域名的阿里云个人免费证书续期，默认阈值 15 天；不要下单或替换证书。"
