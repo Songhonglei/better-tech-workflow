@@ -8,6 +8,7 @@
 |---|---|
 | [hn-nurture](./skills/hn-nurture/) | Hacker News 养号：选题 → 中文参考 → 用户手写发布 → flag 自检。内置 HN 管理员设定的最高红线（禁止 AI 代写），支持 `~/.config` 隐私配置与三层 flag/kill 检测 |
 | [ssl-cert-renew](./skills/ssl-cert-renew/) | SSL 证书续期：按域名和到期阈值检查，授权后申请阿里云个人免费证书并替换 OSS 绑定；零元校验、提交防重和中断恢复 |
+| [webapp-building-pro](./skills/webapp-building-pro/) | Web 应用与小红书小工具开发：自定义模板、通用多用户、自选 OSS/CloudBase/WebDAV、存储检查与多平台交付；AI 功能列为 2.0 待实现 |
 
 ## Quick Start
 
@@ -34,6 +35,8 @@ cp -R skills/ssl-cert-renew ~/.codex/skills/
 ```
 
 详见 [SSL 续期说明](./skills/ssl-cert-renew/README.md)。
+
+Web 应用开发安装方法与运行条件见 [Webapp Building Pro](./skills/webapp-building-pro/README.md)。
 
 ## Install via Agent Platforms
 
@@ -67,7 +70,7 @@ better-tech-workflow/
 
 ## License
 
-MIT (see [LICENSE](./LICENSE))
+MIT (see [LICENSE](./LICENSE))；来源资源的许可范围以各 Skill 内的说明为准。
 
 ## Author
 
