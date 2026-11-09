@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "ai": "6.0.290",
+    "@ai-sdk/openai-compatible": "2.0.78",
+    "drizzle-orm": "^0.45.1",
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.8"
+  }
+}

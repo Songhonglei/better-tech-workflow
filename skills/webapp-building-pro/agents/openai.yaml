@@ -1,0 +1,4 @@
+interface:
+  display_name: "Webapp Building Pro"
+  short_description: "网站与多用户应用开发、自选存储和多平台交付，支持内置与自定义模板"
+  default_prompt: "使用 $webapp-building-pro，根据我的需求选择模板并完成可运行的网站。"

@@ -6,6 +6,12 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 Repo-level versions track the skill suite as a whole. Each skill keeps its own version history
 in `skills/<slug>/CHANGELOG.md`.
 
+### v0.3.0 (2026-11-09)
+
+- 在 `skills/webapp-building-pro/` 收录 Web 应用开发 Skill v1.2.0，包含六个内置模板、外部模板配置、通用账号与角色、OSS/CloudBase/WebDAV 存储和检查工具。
+- 整合小红书小工具、Kimi 后端/存储及 Musepool 条件路线；OpenAI/WorkBuddy 按实际宿主能力接入，AI 标注 2.0 未实现。
+- 新增独立 README / LICENSE / CHANGELOG，更新仓库索引；不提交真实凭证、用户云资源标识或私密验收材料。
+
 ### v0.2.0 (2026-11-06)
 
 - 在 `skills/ssl-cert-renew/` 收录 SSL 证书续期 Skill v0.1.3，包含独立 README / LICENSE / CHANGELOG。
